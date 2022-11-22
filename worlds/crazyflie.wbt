@@ -1,0 +1,510 @@
+#VRML_SIM R2022b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2022b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "../protos/Crazyflie.proto"
+
+WorldInfo {
+}
+TexturedBackground {
+  texture "empty_office"
+}
+TexturedBackgroundLight {
+  texture "empty_office"
+  luminosity 20
+}
+Floor {
+  size 10.00 10.00
+  appearance Parquetry {
+    type "chequered"
+  }
+}
+Wall {
+  translation -5.00 -4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -4.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -4.00 -4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -3.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -2.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.50 -4.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -0.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 0.00 -4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 0.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 1.50 -4.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 2.50 -4.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 2.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 3.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 4.00 -4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 4.50 -5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 5.00 -4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -5.00 -3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -4.00 -3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -3.50 -3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -3.00 -3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -2.50 -3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.00 -3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -0.50 -3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 0.50 -3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 1.00 -3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 1.50 -3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 3.50 -3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 4.00 -3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 5.00 -3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -5.00 -2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -4.00 -2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -2.00 -2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 0.00 -2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 2.00 -2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 2.50 -2.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 4.00 -2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 5.00 -2.50 0
+  size 0.025 1.00 0.5
+}
+Crazyflie {
+  translation -4.50 -1.50 0.015
+  controller "crazyflie_controller_py"
+  name "Crazyflie"
+}
+Viewpoint {
+  orientation -0.35570022233336457 0.15821738392700677 0.9211105315081839 2.3638958483009
+  position -3.75 -2.25 0.75
+  follow "Crazyflie"
+}
+Wall {
+  translation -4.00 -1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -3.00 -1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -2.00 -1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -1.50 -1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.00 -1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -0.50 -1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 0.50 -1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 1.00 -1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 1.50 -1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 3.00 -1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 3.50 -1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 5.00 -1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -4.50 0.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -5.00 -0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -3.50 0.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -3.00 -0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -2.50 0.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.50 0.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 0.00 -0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 1.50 0.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 2.50 0.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 3.00 -0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 4.50 0.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 5.00 -0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -4.50 1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -5.00 0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -2.50 1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.50 1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.00 0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 0.00 0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 2.00 0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 2.50 1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 3.50 1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 4.50 1.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 5.00 0.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -5.00 1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -3.00 1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -1.50 2.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -0.50 2.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 0.00 1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 0.50 2.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 1.00 1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 2.00 1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 3.50 2.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 5.00 1.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -5.00 2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -4.00 2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -3.50 3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -3.00 2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -2.50 3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.50 3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -0.50 3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 1.00 2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 1.50 3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 2.50 3.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 3.00 2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 5.00 2.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -5.00 3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -3.50 4.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -2.00 3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 0.00 3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 1.00 3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 2.50 4.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 3.50 4.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 4.00 3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 5.00 3.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -4.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -5.00 4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -3.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -3.00 4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -2.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation -1.00 4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation -0.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 0.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 1.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 2.00 4.50 0
+  size 0.025 1.00 0.5
+}
+Wall {
+  translation 2.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 3.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 4.50 5.00 0
+  size 1.00 0.025 0.5
+}
+Wall {
+  translation 5.00 4.50 0
+  size 0.025 1.00 0.5
+}
